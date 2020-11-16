@@ -27,3 +27,45 @@ let tomato = document.getElementsByTagName('ol')[1].children[1]
 let banana = tomato.parentElement.parentElement.previousElementSibling.children[0].children[2];
 console.log(tomato);
 console.log(banana);
+
+
+// Remove and Replace in DOM 
+
+
+// to remove :
+tomato.parentElement.remove();
+console.log(tomato.parentElement.parentElement);
+
+let Junkfood = document.getElementsByTagName('ul')[0].children[3]
+
+Junkfood.appendChild(tomato.parentElement);
+
+
+let num = document.getElementById('num');
+let print = document.getElementById('print')
+let list = document.getElementById('list')
+
+
+print.onclick = () => {
+     let start = new Date().getTime();
+     let N = parseInt(num.value);
+     console.log(N);
+     for( let i=1 ; i<= N ; i++){
+         list.innerHTML += '<li>' + i + '</li>' 
+     }
+     let end = new Date().getTime();
+     para1.innerHTML += (end - start) + '</p>';
+}
+
+print1.onclick = () => {
+    let start = new Date().getTime();
+    let N = parseInt(num1.value);
+    console.log(N);
+    let listHTMl = "";
+    for( let i=1 ; i<= N ; i++){
+        listHTMl += '<li>' + i + '</li>' 
+    }
+    list1.innerHTML = listHTMl ; 
+    let end = new Date().getTime();
+    para2.innerHTML += (end - start) + '</p>';
+}
