@@ -44,6 +44,9 @@ Junkfood.appendChild(tomato.parentElement);
 let num = document.getElementById('num');
 let print = document.getElementById('print')
 let list = document.getElementById('list')
+let num1 = document.getElementById('num1');
+let print1 = document.getElementById('print1')
+let list1 = document.getElementById('list1')
 
 
 print.onclick = () => {
@@ -57,7 +60,7 @@ print.onclick = () => {
      para1.innerHTML += (end - start) + '</p>';
 }
 
-print1.onclick = () => {
+/*print1.onclick = () => {
     let start = new Date().getTime();
     let N = parseInt(num1.value);
     console.log(N);
@@ -68,4 +71,15 @@ print1.onclick = () => {
     list1.innerHTML = listHTMl ; 
     let end = new Date().getTime();
     para2.innerHTML += (end - start) + '</p>';
+}
+
+*/
+print1.onclick = () => {
+    let start = new Date().getTime();
+    let N = parseInt(num1.value);
+    for( let i=1 ; i<=N ; i++){
+        let item = document.createElement('li');
+        item.innerText = i ; 
+        list1.appendChild(item);
+    }
 }
