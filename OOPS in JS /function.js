@@ -1,4 +1,4 @@
-/* function person ( name , age ){
+function person ( name , age ){
     this.name = name ;
     this.age  = age ; 
     return 10 ;
@@ -52,7 +52,7 @@ console.log(a.isPrototypeOf(b));
 console.log(b.isPrototypeOf(a));
 //false
 
- */
+
 
 function Person1( name , age ){
     this.name = name ;
