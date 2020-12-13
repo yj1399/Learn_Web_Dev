@@ -8,6 +8,3 @@ const perTwo = () => {
 }
 
 perOne('Yash' , perTwo);
-
-
-// ll

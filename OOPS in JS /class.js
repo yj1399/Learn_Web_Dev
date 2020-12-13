@@ -10,7 +10,6 @@ class student{
 }
 
 
-
 class player extends student {
     constructor( name , age , cls , game ){
         super(name , age, cls );
