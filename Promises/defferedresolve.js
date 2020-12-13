@@ -9,7 +9,6 @@ let somePromise = function() {
     })
 }
 
-
 let somePromiseObject = somePromise() ; 
 
 setTimeout( ()=> { 
@@ -17,3 +16,4 @@ setTimeout( ()=> {
         console.log(`After the Download `)   
     })
 } , 5000 )
+

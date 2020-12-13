@@ -9,7 +9,7 @@ function someasyncTask( callback ) {
 
 let somePromise = function() { 
     return new Promise( function( resolve , reject ) {
-        someasyncTask(resolve) ; 
+        someasyncTask(resolve) ;  
     })
 }
 
